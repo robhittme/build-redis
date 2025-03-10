@@ -1,0 +1,4 @@
+SET liz Great
+SET rob cool
+HMSET basil breed boykin
+HMSET basil color brown
