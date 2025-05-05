@@ -2,3 +2,6 @@ SET liz Great
 SET rob cool
 HMSET basil breed boykin
 HMSET basil color brown
+SET liz "awesome"
+SET name "asdf
+SET height 5'11
