@@ -24,6 +24,7 @@ type RedisStore struct {
 }
 
 func NewRedisStore() (*RedisStore, error) {
+	fmt.Println("Creating RedisStore...")
 	aofFile, err := os.OpenFile("redisstore.aof", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		return nil, err
@@ -204,4 +205,3 @@ func main() {
 	// input -> redis store.
 	inputCapture(os.Stdin, rs)
 }
-
